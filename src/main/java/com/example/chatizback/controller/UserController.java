@@ -1,4 +1,4 @@
 package com.example.chatizback.controller;
 
-public class QuizController {
+public class UserController {
 }
