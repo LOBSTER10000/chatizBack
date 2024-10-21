@@ -5,18 +5,16 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.sql.Timestamp;
 import java.time.LocalDateTime;
-import java.util.Date;
 
-@Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
-public class ChatRoomDto {
+@Data
+public class ChatReceiptDto {
     private String chatRoomCode;
-    private String chatRoomName;
-    private int population;
-    private boolean isEmpty;
-    private boolean isGaming;
+    private int chatId;
+    private String receiver;
+    private boolean readStatus;
+    private LocalDateTime received_at;
 }

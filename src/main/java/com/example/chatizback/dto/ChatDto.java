@@ -13,9 +13,7 @@ import java.time.LocalDateTime;
 @Data
 public class ChatDto {
     private String chatRoomCode;
-    private String messenger;
+    private String sender;
     private String content;
-    private String receiver;
-    private LocalDateTime timestamp = LocalDateTime.now();
-
+    private LocalDateTime timestamp;
 }
